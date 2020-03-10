@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css">
+    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+</head>
+<body>
+    <div class="modal-wrapper dn">
+        <div class="form-wrapper">
+            <input class="close-btn" type="submit" value="close">
+            <div class="form-container">
+                <div class="title-block">
+                    <h1 class="title">Add task</h1>
+                </div>
+                <form action="" class="taskForm">
+                    <div class="input-wrapper">
+                        <input type="text" class="subtask-field" placeholder="Task title">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" class="subtask-field" placeholder="Task">
+                        <input type="button" class="subtask-field-delbutton" value="-">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" class="subtask-field" placeholder="Task">
+                        <input type="button" class="subtask-field-delbutton" value="-">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" class="subtask-field" placeholder="Task">
+                        <input type="button" class="subtask-field-delbutton" value="-">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" class="subtask-field" placeholder="Task">
+                        <input type="button" class="subtask-field-delbutton" value="-">
+                    </div>
+                </form>
+                <input type="button" value="+" class="addInputBtn">
+                <input type="button" value="Complete" class="createTask">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="title-block">
+            <h1 class="title">Tasks</h1>
+            <input class="new-task" type="submit" value="+">
+        </div>
+        <div class="task-list">
+            <div class="task">
+                <div class="task-title-container">
+                    <span class="task-title">Title</span>
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+                <div class="task-body">
+                    <ul class="task-list" id="task-list-id">
+                        <li class="task-element">
+                            <div class="value-wrapper">
+                                <span class="task-element__value">Puknut</span>
+                                <input class="field-value-editor" type="text">
+                            </div>
+                            <div class="del-button">-</div>
+                        </li>
+                        <li class="task-element">
+                            <div class="value-wrapper">
+                                <span class="task-element__value">Potom puknut s podlivoi</span>
+                                <input class="field-value-editor" type="text">
+                            </div>
+                            <div class="del-button">-</div>
+                        </li>
+                        <li class="task-element">
+                            <div class="value-wrapper">
+                                <span class="task-element__value">Teper pomoi popu</span>
+                                <input class="field-value-editor" type="text">
+                            </div>
+                            <div class="del-button">-</div>
+                        </li>
+                        <li class="task-element">
+                            <div class="value-wrapper">
+                                <span class="task-element__value">Postirai trusy</span>
+                                <input class="field-value-editor" type="text">
+                            </div>
+                            <div class="del-button">-</div class="del-button">
+                        </li>
+                        <li class="task-element">
+                            <div class="value-wrapper">
+                                <span class="task-element__value">Just relax and enjoy, zatem povtori snachala then repeat first</span>
+                                <input class="field-value-editor" type="text">
+                            </div>
+                            <div class="del-button">-</div>
+                        </li>
+                    </ul>
+                    <input class="changes-saving" type="submit" value="Save">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="m_0.2.js"></script>
+</body>
+</html>

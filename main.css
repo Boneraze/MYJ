@@ -1,0 +1,183 @@
+:root {
+    --black: #191919;
+    --task-main-color: rgb(14, 14, 14);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: inherit;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgba(0,0,0, 0.9);
+}
+
+
+
+.dn {
+    display: none !important;
+}
+
+
+
+.container {
+    min-width: 320px;
+    max-width: 745px;
+    background-color: var(--black);
+    padding: 25px;
+    color: white;
+    margin: auto;
+}
+
+.title-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.title {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.new-task {
+    min-width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    color: var(--black);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.new-task:hover {
+    background-color: limegreen;
+}
+
+.task {
+    background-color: var(--task-main-color);
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.task-title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-title {
+    font-weight: bold;
+}
+
+.fa-pencil-alt {
+    color: white;
+    cursor: pointer;
+}
+
+.task-element {
+    border: solid 1px var(--black);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.value-wrapper {
+}
+
+.task-element__value {}
+
+.field-value-editor {
+    display: none;
+    padding: 10px;
+    width: calc(100% - 32px);
+}
+
+.del-button {
+    border: solid 1px var(--black);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+}
+
+.task.edit .value-wrapper {
+    width: 100%;
+}
+
+.task.edit .task-element__value {
+    display: none;
+}
+
+.task.edit .field-value-editor {
+    display: block;
+}
+
+.task.edit .del-button {
+    display: block;
+}
+
+.del-button:hover {
+    background-color: var(--black);
+    color: var(--task-main-color);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.modal-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.form-wrapper {
+    margin: auto;
+}
+
+.taskForm {}
+
+.input-wrapper {}
+
+.subtask-field {}
+
+.close-btn {
+    text-align: center;
+    background-color: powderblue;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    transition: 0.3s;
+    background-color: rgb(158, 202, 207);
+}
+
+.form-container {
+    background-color: white;
+    padding: 25px;
+}
+
+.addBtn {
+    width: 100%;
+}
