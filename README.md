@@ -1,0 +1,2 @@
+# MYJ
+My journal
